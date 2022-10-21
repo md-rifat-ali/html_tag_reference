@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Tag-Reference</title>
+</head>
+
+<body>
+    <!-- Defines a comment -->
+    <!-- ... -->
+
+
+    <!-- Defines the document type -->
+
+    <!-- Defines a hyperlink -->
+    <a href="https://facebook.com">FACEBOOK</a>
+
+    <!-- Defines an abbreviation -->
+    <abbr title="html reference">Html reference</abbr>
+
+    <!-- Defines contact information for the author/owner of a document  -->
+    <address>i am <a href="rifatali.web@gmail.com">Rifat Ali</a>.<br>
+        Visit me at: <br>
+        w3schools.com <br>
+        Rajshahi,Dhaka <br>
+        Bangladesh.
+    </address>
+
+    <!-- Defines an area inside an image map 
+-->
+    <area shape="rect" coords="450,300,400,250" href="laptop.html" alt="picutre of laptop">
+
+    <!-- Defines an article -->
+    <article>
+        <h1>Facebook</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sunt enim incidunt repellat distinctio.
+            Molestiae reprehenderit voluptates quasi nihil voluptatem.</p>
+
+        <h1>Instragram</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda corporis eaque sapiente, vel
+            consequuntur voluptate architecto quia eum impedit!</p>
+
+        <h1>Twitter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum ea ut eum placeat, suscipit atque dolorem
+            eveniet dolorum commodi.</p>
+    </article>
+
+    <!-- Defines content aside from the page content -->
+    <aside>
+        <h1>aside details</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque ex iusto, enim recusandae
+            autem.</p>
+        <h3>aside center</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos suscipit totam rerum, veniam natus vel
+            molestias quas nesciunt.</p>
+    </aside>
+
+    <!-- Defines embedded sound content -->
+    <audio controls>
+
+        <source src="fatiha.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- Defines bold text -->
+    <b>Shikhbe Shobai</b>
+
+    <!-- Specifies the base URL/target for all relative URLs in a document -->
+    <!-- <base href="https://www.facebook.com" target="_blank"> -->
+
+    <!-- Isolates a part of text that might be formatted in a different direction from other text outside it -->
+    <ul>
+        <li><bdi>Rifat ali</bdi>:80 points out of 100</li>
+    </ul>
+
+    <!-- Overrides the current text direction -->
+    <p><bdo dir="rtl">my name is Rifat Ali</bdo></p>
+
+    <!-- Defines a section that is quoted from another source -->
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laborum ducimus? Beatae omnis non
+        neque deserunt modi doloribus, voluptate sunt accusantium reprehenderit, fugiat maiores ratione eum, libero quas
+        iste consequatur!</blockquote>
+
+    <!-- Defines the document's body	Defines the document's body -->
+
+    <!-- <body>
+        i am rifat.
+    </body> -->
+
+    <!-- Defines a single line break -->
+    <p>i am student of shikhbe shobai.</p>
+    <br>
+    <p> i am beginner of web devlopment sector</p>
+
+    <!-- Defines a clickable button -->
+    <button>click me</button>
+
+    <!-- Used to draw graphics, on the fly, via scripting (usually JavaScript) -->
+    <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 100);
+    </script>
+
+    <!-- Defines a table caption -->
+    <table>
+        <caption>Student details</caption>
+        <tr>
+            <th>Name</th>
+            <th>Semester</th>
+        </tr>
+        <tr>
+            <td>Rifat</td>
+            <td>8th</td>
+        </tr>
+    </table>
+    <!-- Defines the title of a work -->
+    <p><cite>Rifat Ali</cite>is a student of Shikhbe Shobai.</p>
+
+    <!-- Defines a piece of computer code -->
+    <p>The name of our country is <code>BANGLADESH.</code></p>
+
+    <!-- Specifies column properties for each column within a <colgroup> element -->
+
+    <!-- Specifies a group of one or more columns in a table for formatting -->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:gray">
+            <col style="background-color:goldenrod">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Semester</th>
+        </tr>
+        <tr>
+            <td>Rifat</td>
+            <td>Computer</td>
+            <td>8th</td>
+        </tr>
+    </table>
+
+    <!-- Adds a machine-readable translation of a given content-->
+
+    <ul>
+        <li><data value="1">Mango</data></li>
+        <li><data value="2">Banana</data></li>
+        <li><data value="3">Orange</data></li>
+    </ul>
+
+    <!-- Specifies a list of pre-definedoptions for input controls  -->
+    <h1>The datalist element</h1>
+
+    <form action="/action_page.php" method="get">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+    <!-- Defines a description/value of a term in a description list -->
+    <dl>
+        <dt>Bangladesh</dt>
+        <dd>It is beautiful country.</dd>
+    </dl>
+
+    <!-- Defines text that has been deleted from a document -->
+
+    <p>I am a <del>good</del> student.</p>
+
+    <!-- Defines additional details that the user can view or hide -->
+    <details>
+        <summary>Lorem</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, alias.</p>
+    </details>
+
+    <!-- Specifies a term that is going to be defined within the content -->
+    <p><dfn>Html</dfn>means hypertext markup language.</p>
+
+    <!-- Defines a dialog box or window -->
+    <dialog open>this is dialog element.</dialog>
+
+    <!-- Defines a section in a document -->
+    <div>
+        <h3>hello everyone</h3>
+    </div>
+
+    <!-- Defines a description list -->
+    <dl>
+        <dt>Bangladesh</dt>
+        <dd>It is a small country.</dd>
+    </dl>
+
+    <!-- Defines a term/name in a description list -->
+    <dl>
+        <dt>Bangladesh</dt>
+        <dd>It has large population.</dd>
+    </dl>
+
+    <!-- Defines emphasized text -->
+    <em>My name is Rifat Ali.</em>
+
+    <!-- Defines a container for an external application -->
+    <embed type="image/jpg" src="img/laptop.jpg" width="300" height="200">
+
+    <!-- Groups related elements in a form -->
+    <form>
+        <fieldset>
+            <legend>student details</legend>
+            <label for="firstname">Firstname:</label><br>
+            <input type="text" name="firstname"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email"><br><br>
+            <button>submit</button>
+        </fieldset>
+    </form>
+
+
+    <!-- Defines a caption for a <figure> element -->
+    <figure>
+        <img src="img/coding.jpg" alt="Coding image" height="200px">
+        <figcaption>Fig.1-Coding image</figcaption>
+    </figure>
+
+    <!-- Defines a footer for a document or section -->
+
+    <footer>
+        <p>copywrite@ by:
+            <a href="rifatali.web@gmail.com">Rifat Ali</a>
+        </p>
+    </footer>
+
+    <!-- Defines an HTML form for user inpu -->
+    <form>
+        <fieldset>
+            <legend>login form</legend>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password"><br><br>
+            <button>submit</button>
+        </fieldset>
+    </form>
+
+    <!-- Defines HTML headings -->
+    <h1>Hello world</h1>
+    <h2>Hello world</h2>
+    <h3>Hello world</h3>
+    <h4>Hello world</h4>
+    <h5>Hello world</h5>
+    <h6>Hello world</h6>
+
+    <!-- Contains metadata/information for the document -->
+
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>html reference</title>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+
+</body>
+</html> -->
+
+    <!-- Defines a header for a document or section -->
+    
+    <header>
+        <h1>This is header</h1>
+    </header>
+
+<!-- Defines a thematic change in the content -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas quae vero. Delectus, ipsam beatae non reprehenderit maiores nostrum a ea doloremque velit labore, exercitationem aut ratione architecto dolorem provident?</p>
+<hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis possimus cum commodi temporibus cupiditate nisi blanditiis numquam libero impedit, ratione distinctio, repudiandae tenetur assumenda. Debitis magnam odit sequi repudiandae.</p>
+
+<!-- Defines the root of an HTML document -->
+<!-- <html> -->
+
+<!-- Defines a part of text in an alternate voice or mood -->
+<p>My name is <i>Rifat Ali</i></p>
+
+<!-- Defines an inline frame -->
+<iframe src="https://www.youtube.com" frameborder="0" title="It is most valuable social site."></iframe>
+
+<!-- Defines an image -->
+<img src="img/laptop.jpg" alt="laptop picture" height="300px">
+
+<!-- Defines an input control -->
+<input type="text">This is input
+
+<!-- Defines a text that has been inserted into a document -->
+<p>I am from <del>Rajshahi</del><ins>Dhaka</ins></p>
+
+<!-- Defines keyboard input -->
+<p>Press <kbd>ctrl</kbd>+<kbd>s</kbd> to save text.</p>
+
+<!-- Defines a label for an <input> element -->
+
+<!-- Defines a caption for a <fieldset> element -->
+
+    <form>
+        <fieldset>
+            <legend>sign in</legend>
+            <label for="email"> Wrtite your Email:</label><br>
+            <input type="email" name="email"><br><br>
+            <label for="password"> Write your Password:</label><br>
+            <input type="password" name="password"><br><br>
+            <button>sign in</button>
+        </fieldset>
+    </form>
+
+<!-- Defines a list item -->
+<ul>
+    <li>tea</li>
+    <li>coffee</li>
+    <li>milk</li>
+</ul>
+
+<!-- Defines the relationship between a document and an external resource (most used to link to style sheets) -->
+
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+<!-- Specifies the main content of a document -->
+
+<main>
+    <p>this is paragraph</p>
+    <h1>this is first heading</h1>
+</main>
+
+<!-- Defines an image map -->
+<img src="img/coding.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+<!-- Defines marked/highlighted text -->
+<p>The name of our country is <mark>Bangladesh</mark> 
+</p>
+
+<!-- Defines a scalar measurement within a known range (a gauge) -->
+
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+
+<!-- Defines navigation links -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Service</a>
+    <a href="#">About</a>
+</nav>
+
+
+
+
+
+
+
+</body>
+
+</html>
